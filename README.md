@@ -13,28 +13,19 @@ The following runtimes/fps are obtained by averaging runtimes over 800 frames. M
 We see it's possible to upsample to 720p at around 30fps.
 
 # Requirements
-This was tested on Python 3.7. To install the required packages, use the provided requirements.txt file like so:
-```bash
 pip install -r requirements.txt
-```
 
 # Pre-trained Model
-A pretrained generator model on the DIV2k dataset is provided in the 'models' directory. It uses 6 inverted residual blocks, with 32 filters in every layer of the generator. 
-
-Upsampling is done via phase shifts in the low resolution space for speed.
 
 To try out the provided pretrained model on your own images, run the following:
 
-```bash
 python infer.py --image_dir 'path/to/your/image/directory' --output_dir 'path/to/save/super/resolution/images'
-```
 
 # Training
 To train, simply execute the following command in your terminal:
 ```bash
 python main.py --image_dir 'path/to/image/directory' --hr_size 384 --lr 1e-4 --save_iter 200 --epochs 10 --batch_size 14
 ```
-Model checkpoints and training summaries are saved in tensorboard. To monitor training progress, open up tensorboard by pointing it to the 'logs' directory that will created when you start training.
 
 # Samples
 Following are some results from the provided trained model. Left shows the low res image, after 4x bicubic upsampling. Middle is the output of the model. Right is the actual high resolution image.
