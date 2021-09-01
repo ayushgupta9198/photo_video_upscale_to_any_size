@@ -42,10 +42,6 @@ Following are some results from the provided trained model. Left shows the low r
 <p align="center">
   <b>384x384 to 1536x1536 Upsampling</b>
   <img src="https://user-images.githubusercontent.com/4294680/67642055-4f7a9900-f908-11e9-93d7-5efc902bd81c.png"> 
-  <b>256x256 to 1024x1024 Upsampling</b>
-  <img src="https://user-images.githubusercontent.com/4294680/67642086-8fda1700-f908-11e9-8428-8a69ea86dedb.png">
-  <b>128x128 to 512x512 Upsampling</b>
-  <img src="https://user-images.githubusercontent.com/4294680/67641979-5ead1700-f907-11e9-866c-b72d2e1dec8a.png">
 </p>
 
 # Extreme Super Resolution
@@ -53,8 +49,7 @@ Upsampling HQ images 4x as a check to see the image is not destroyed (since the 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/4294680/67641915-b434f400-f906-11e9-88d1-44a7f2a80923.png">
-  <img src="https://user-images.githubusercontent.com/4294680/67641917-b8611180-f906-11e9-8539-81f17d69653f.png">
-  <img src="https://user-images.githubusercontent.com/4294680/67641946-fbbb8000-f906-11e9-95af-2873eb01e2ec.png">
+
 </p>
 
 # Changing Input Size
