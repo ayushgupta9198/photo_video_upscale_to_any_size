@@ -1,11 +1,5 @@
 # Fast-SRGAN
-The goal of this repository is to enable real time super resolution for upsampling low resolution videos. Currently, the design follows the [SR-GAN](https://arxiv.org/pdf/1609.04802.pdf) architecture. But instead of residual blocks, inverted residual blocks are employed for parameter efficiency and fast operation. This idea is somewhat inspired by [Real time image enhancement GANs](http://www.micc.unifi.it/seidenari/wp-content/papercite-data/pdf/caip_2019.pdf).
-
-The training setup looks like the following diagram:
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/4294680/67164120-22157480-f377-11e9-87c1-5b6acace0e47.png">
-</p>
+The goal of this repository is to enable real time super resolution for upsampling low resolution videos But instead of residual blocks, inverted residual blocks are employed for parameter efficiency and fast operation.
 
 # Speed Benchmarks
 The following runtimes/fps are obtained by averaging runtimes over 800 frames. Measured on a GTX 1080.
@@ -87,3 +81,4 @@ model = keras.models.Model(inputs, outputs)
 # Contributing
 If you have ideas on improving model performance, adding metrics, or any other changes, please make a pull request or open an issue. I'd be happy to accept any contributions.
 
+Thanks
